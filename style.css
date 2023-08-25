@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Lisu+Bosa:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-image: url("images/cookie-wall-trees-bg-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 100vh;
+    background-color: hsla(210, 1%, 47%, .51);
+}
+
+.content-section {
+    max-width: 1200px;
+    margin: 50px auto 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 0 6px;
+}
+
+.subtitle {
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+    font-size: 68px;
+    color: rgb(255, 255, 255);
+    line-height: 72px;
+    margin: 0 0 18px;
+}
+
+.subtitle b {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+}
+
+.consent-message {
+    max-width: 668px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.consent-message .impact-text {
+    font-size: 18px;
+    line-height: 23px;
+    padding: 0 0 10px;
+}
+
+.consent-message .cookie-info {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0 0 24px;
+}
+
+.terms-acceptance {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 12px 0px,
+        rgba(0, 0, 0, 0.2) 0px 10px 30px 0px;
+    opacity: 0.7;
+    z-index: 30;
+    max-width: 280px;
+    margin: 30px 0 0;
+}
+
+.custom-button {
+    color: #fff;
+    cursor: pointer;
+    min-width: 120px;
+    font-size: 14px;
+    margin: 0 16px 0 0;
+    border-radius: 5px;
+    padding: 0 12px;
+    height: 40px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.button-container .custom-button:hover {
+    background: #3741d9;
+    border-color: #3741d9;
+}
+
+.button-container .accept-button {
+    background: #5268ff;
+    border: 1px solid #5268ff;
+}
+
+.button-container .preferences-button {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.button-container .decline-link {
+    padding: 0 12px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.button-container .decline-link:hover {
+    color: #5268ff;
+}
+
+
+.terms-section p {
+    font-family: "Roboto", sans-serif;
+    color: #484a4d;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.content-container {
+    padding: 50px 40px 40px;
+    font-weight: 400;
+}
+
+.action-section {
+    border-top: 1px solid #d4d7d9;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.action-button {
+    background: #5268ff;
+    border: 1px solid #5268ff;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 50px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.cookie-agreement {
+    max-width: 740px;
+}
+
+h1.main-heading {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 34px;
+    margin: 25px 0 60px;
+}
+
+.main-heading .sub-heading {
+    font-family: 'Lisu Bosa', serif;
+    font-weight: 900;
+}
+
+
+.logo-section {
+    width: 36px;
+    height: 29px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: #37474f;
+    padding: 10px 15px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo img {
+    width: 50px;
+    height: 25px;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.nav-toggle i {
+    color: #fff;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid rgba(23, 24, 26, 0.11);
+    border-radius: 5px;
+    position: relative;
+}
+
+.nav-items li {
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-items li:hover {
+    background: #f7f9fa;
+    cursor: pointer;
+}
+
+.nav-items>li:not(:last-child) {
+    border-right: 1px solid rgba(55, 71, 79, 0.1);
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+.arrow-down::after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    margin: 0 0 0 5px;
+    vertical-align: middle;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #37474f;
+    list-style: none;
+    padding: 8px 0;
+    width: 260px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 25px 0 0 -25px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content li {
+    padding: 10px 20px;
+}
+
+@media (max-width: 991px) {
+    .header {
+        background-size: 100% 100%;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid rgba(23, 24, 26, 0.11);
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+    .nav-items.show {
+        display: flex;
+    }
+
+    .nav-items>li:not(:last-child) {
+        border-right: none;
+    }
+
+    .nav-items li:hover {
+        background: #f7f9fa;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        display: none;
+    }
+
+    .dropdown-content.show {
+        display: block;
+    }
+
+    .content-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .cookie-agreement {
+        margin: 40px 0 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .content-section {
+        text-align: center;
+    }
+
+    .cookie-consent .title {
+        font-size: 18px;
+    }
+
+    .cookie-consent .subtitle {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .button-container {
+        line-height: 50px;
+    }
+
+    .decline-link {
+        display: block;
+    }
+}
